@@ -19,8 +19,7 @@ fig.update_traces(textfont_color='white')
 col1,col2,col3 = st.columns(3)
 col2.image('logo.png')
 st.title('Docentes do IFPA por campus/área')
-title_alignment=
-"""
+title_alignment="""
 <style>
 #the-title {
   text-align: center
