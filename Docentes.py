@@ -16,6 +16,6 @@ fig=px.sunburst(docentes_por_area, path=['Campus', 'Área de ingresso'], values=
 fig.update_traces(hovertemplate='%{label}<br>Docentes=%{value}<extra></extra>')
 fig.update_layout(width=1000, height=1000, font_color='white',uniformtext_minsize=12, uniformtext_mode='hide', title_x = 0.5, title_font_size=24 )
 fig.update_traces(textfont_color='white')
-st.image('Logo.png')
+st.image('logo.png')
 st.title('Docentes do IFPA por campus/área')
 st.plotly_chart(fig)
