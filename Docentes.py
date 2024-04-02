@@ -17,14 +17,6 @@ fig.update_traces(hovertemplate='%{label}<br>Docentes=%{value}<extra></extra>')
 fig.update_layout(width=1000, height=1000, font_color='white',uniformtext_minsize=12, uniformtext_mode='hide', title_x = 0.5, title_font_size=24 )
 fig.update_traces(textfont_color='white')
 col1,col2,col3 = st.columns(3)
-col2.image('logo.png')
-st.title('\tDocentes do IFPA por campus/área')
-title_alignment="""
-<style>
-#the-title {
-  text-align: center
-}
-</style>
-"""
-st.markdown(title_alignment, unsafe_allow_html=True)
+col1.image('logo.png')
+col2.title('Docentes do IFPA por campus/área')
 st.plotly_chart(fig, theme=None)
