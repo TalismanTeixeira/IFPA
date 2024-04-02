@@ -18,7 +18,7 @@ fig.update_layout(width=1000, height=1000, font_color='white',uniformtext_minsiz
 fig.update_traces(textfont_color='white')
 fig.add_layout_image(dict(source=Logo,
            xref="paper", yref="paper",
-        x=0.15, y=1.08,
+        x=0.2, y=1.08,
         sizex=0.2, sizey=0.2,
         xanchor="right", yanchor="top"))
 st.plotly_chart(fig)
