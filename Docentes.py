@@ -18,5 +18,14 @@ fig.update_layout(width=1000, height=1000, font_color='white',uniformtext_minsiz
 fig.update_traces(textfont_color='white')
 col1,col2,col3 = st.columns(3)
 col2.image('logo.png')
-col2.title('Docentes do IFPA por campus/área')
+st.title('Docentes do IFPA por campus/área')
+title_alignment=
+"""
+<style>
+#the-title {
+  text-align: center
+}
+</style>
+"""
+st.markdown(title_alignment, unsafe_allow_html=True)
 st.plotly_chart(fig, theme=None)
