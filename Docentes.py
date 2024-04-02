@@ -5,6 +5,8 @@ import plotly.io as pio
 from PIL import Image
 import streamlit as st
 
+st.set_page_config(layout="wide")
+
 Logo = Image.open("logo.png")
 docentes = pd.read_excel('Docentes IFPA 2024.xlsx')
 docentes['Área de ingresso']=docentes['Área de ingresso'].str.capitalize()
